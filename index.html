@@ -30,22 +30,37 @@
     <!--Written Bar-->
     <div class="writeBar">
         <div class="statusSelector">
-            <div class="norStarted"></div>
-            <div class="progress"></div>
-            <div class="done"></div>
+            <div class="notStarted">
+                <input type="radio" class="radioNotStarted" id="radioNotStarted" name="status" value="notStarted" checked>
+                <label for="radioNotStarted">Not Started</label>
+            </div>
+            <div class="progress">        
+                <input type="radio" class="radioProgress" id="radioProgress" name="status" value="Progress" checked>
+                <label for="radioProgress">Progress</label>
+            </div>
+            <div  class="done">
+                <input type="radio" class="radioDone" id="radioDone" name="status" value="Done" checked>
+                <label for="radioDone">Done</label>
+            </div>
         </div>
         <input class="writtenBar" type="text">
     </div>
     <!--Schedule bar to indicate to project status-->
     <div class="taskBar">
-        <div class="notStarted">
-            <div class="scheduleNotStarted"></div>
+        <div class="notStartedScheduler">
+            <div class="scheduleNotStarted">
+                <span class="notStartedColor"></span><p>Not Started</p>
+            </div>
         </div>
-        <div class="progress">
-            <div class="scheduleProgress"></div>
+        <div class="progressScheduler">
+            <div class="scheduleProgress">
+                <span class="progressColor"></span><p>Progress</p>
+            </div>
         </div>
-        <div class="done">
-            <div class="scheduleDone"></div>
+        <div class="doneScheduler">
+            <div class="scheduleDone">
+                <span class="doneColor"></span><p>Done</p>
+            </div>
         </div>
     </div>
 </body>
