@@ -23,6 +23,7 @@
     --progress-Gradient-1: #813C00;
     --notStarted-Gradient-2: #FF0000;
     --notStarted-Gradient-1: #810002;
+    
 }
 
 /*Main Element*/
@@ -84,7 +85,63 @@ body {
 .logo {
     color: var(--font);
     font-weight: 600;
+    cursor: pointer;
 }
 .flowColor {
     color: var(--emphasizes-Font);
+}
+
+/*Written Bar*/
+.writeBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.writtenBar {
+    width: 62.5vw;
+    height: 7vh;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.statusSelector {
+    display: flex;
+    width: 62.5vw;
+    gap: 10px;
+}
+.notStarted, .progress, .done {
+    background-color: var(--created-Scheduler-Gradient-2);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background:
+        linear-gradient(
+            to top, 
+            color-mix(in srgb, var(--navbar-Gradient-1) 100%, var(--created-Scheduler-Gradient-2)),
+            color-mix(in srgb, var(--navbar-Gradient-2) 100%, var(--created-Scheduler-Gradient-2))
+        ) padding-box,
+        linear-gradient(
+            to top, 
+            color-mix(in srgb, var(--stroke-Gradient-1) 85%, var(--background-Gradient-2)),
+            color-mix(in srgb, var(--stroke-Gradient-2) 40%, var(--background-Gradient-2))
+        ) border-box;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    opacity: 0;
+}
+label {
+    cursor: pointer;
+}
+input#radioNotStarted:checked + label {
+    color: white; 
+}
+input#radioProgress:checked + label {
+    color: white;
+}
+input#radioDone:checked + label {
+    color: white;
 }
