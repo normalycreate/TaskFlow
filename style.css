@@ -106,14 +106,17 @@ body {
     font-size: 1.5rem;
 }
 .statusSelector {
-    display: flex;
     width: 62.5vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
     gap: 10px;
+    margin-bottom: 10px;
 }
-.notStarted, .progress, .done {
+.statusSelector label {
     background-color: var(--created-Scheduler-Gradient-2);
     border: 2px solid transparent;
-    border-radius: 5px;
+    border-radius: 10px;
     background:
         linear-gradient(
             to top, 
@@ -125,7 +128,26 @@ body {
             color-mix(in srgb, var(--stroke-Gradient-1) 85%, var(--background-Gradient-2)),
             color-mix(in srgb, var(--stroke-Gradient-2) 40%, var(--background-Gradient-2))
         ) border-box;
+    
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 5px;
+    font-size: 13pt;
 }
+.notStartedColor, .progressColor, .doneColor {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-size: contain;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.notStartedColor { background-image: url(icon/notStarted.svg);}
+.progressColor { background-image: url(icon/progres.svg);}
+.doneColor { background-image: url(icon/done.svg);}
 input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance: none;
