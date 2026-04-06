@@ -11,8 +11,6 @@ Quickly add new tasks.
 Remove tasks that are no longer needed.
 - 💾 LocalStorage Persistence
 All tasks are automatically saved in the browser and persist after reload.
-- 📤 Auto Export (Local Backup)
-Tasks are automatically stored as a local backup (Work In Progress).
 - 🔄 Task Status
 Each task can have one of the following statuses: Not Started, In Progress, and Done
 
@@ -31,4 +29,5 @@ Each task can have one of the following statuses: Not Started, In Progress, and 
     Open index.html in your browser.
 
 ## Dekstop Prototype UI
-![Dekstop Prototype UI](https://github.com/user-attachments/assets/43ffc93b-0c1a-4bcb-b924-b2821eb8e001)
+![To Do UI 3](https://github.com/user-attachments/assets/432ebd2c-1502-4f4c-a4af-28022a96cf99)
+
