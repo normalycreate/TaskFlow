@@ -15,3 +15,18 @@ console.log(
   "%c> Succefully Running Javascript (Taskflow WIP-RELEASE--BATCH-01)\n> Welcome To Task Flow! Ready to written your schedule today? ☕",
   "color: #00FF00; font-family: monospace; font-size: 12px;"
 );
+
+//Getting the element from the element id in HTML
+//Navbar element
+const theme = document.getElementById("changeTheme");
+const sortTask = document.getElementById("sortTask");
+const addTask = document.getElementById("addTask");
+const delleteTask = document.getElementById("removeTask")
+//Option Menu
+const notStartedOption = document.getElementById("radioNotStarted");
+const progressOption = document.getElementById("radioProgress");
+const doneOption = document.getElementById("radioDone");
+//Board menu
+const notStarted = document.getElementById("boardNotStarted");
+const progress = document.getElementById("boardProgress");
+const done = document.getElementById("boardDone");
