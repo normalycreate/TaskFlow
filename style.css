@@ -59,13 +59,13 @@ body {
     background:
         linear-gradient(
             to top, 
-            color-mix(in srgb, var(--navbar-Gradient-1) 75%, var(--background-Gradient-2)),
-            color-mix(in srgb, var(--navbar-Gradient-2) 25%, var(--background-Gradient-2))
+            color-mix(in srgb, var(--navbar-Gradient-1) 75%, transparent),
+            color-mix(in srgb, var(--navbar-Gradient-2) 40%, transparent)
         ) padding-box,
         linear-gradient(
             to top, 
-            color-mix(in srgb, var(--stroke-Gradient-1) 85%, var(--background-Gradient-2)),
-            color-mix(in srgb, var(--stroke-Gradient-2) 40%, var(--background-Gradient-2))
+            color-mix(in srgb, var(--stroke-Gradient-1) 75%, transparent),
+            color-mix(in srgb, var(--stroke-Gradient-2) 40%, transparent)
         ) border-box;
 }
 .navbarFeature {
@@ -215,11 +215,12 @@ input#radioNotStarted:checked + label, input#radioProgress:checked + label, inpu
     display: flex;
     flex-direction: column;
     flex: 1;
-    max-width: 20.8vw;
-    max-width: 60vh;
+    max-width: 30vw;
+    height: 33.5rem;
     border-radius: 10px;
     border: 3px solid transparent;
     padding: 20px;
+    overflow: hidden;
     background:
         linear-gradient(
             to top, 
@@ -271,7 +272,16 @@ input#radioNotStarted:checked + label, input#radioProgress:checked + label, inpu
     flex-direction: column;
     gap: 10px;
     flex-grow: 1;
-    padding-bottom: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--font) var(--created-Scheduler-Gradient-2);
+}
+.taskList::-webkit-scrollbar {
+    width: 6px;
+}
+.taskList::-webkit-scrollbar-thumb {
+    background-color: var(--font);
+    border-radius: 10px;
 }
 .taskCard {
     background:
@@ -291,4 +301,13 @@ input#radioNotStarted:checked + label, input#radioProgress:checked + label, inpu
     color: var(--font);
     cursor: grab;
 }
-
+.noTask {
+    display: flex;
+    color: var(--font);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 27rem;
+    font-size: 15pt;
+    opacity: 20%;
+}
