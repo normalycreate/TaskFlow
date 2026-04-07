@@ -21,7 +21,9 @@ console.log(
 const theme = document.getElementById("changeTheme");
 const sortTask = document.getElementById("sortTask");
 const addTask = document.getElementById("addTask");
-const delleteTask = document.getElementById("removeTask")
+const delleteTask = document.getElementById("removeTask");
+const taskList = document.getElementById("taskList");
+const noTaskData = document.querySelectorAll(".noTask")
 //Option Menu
 const notStartedOption = document.getElementById("radioNotStarted");
 const progressOption = document.getElementById("radioProgress");
@@ -30,3 +32,21 @@ const doneOption = document.getElementById("radioDone");
 const notStarted = document.getElementById("boardNotStarted");
 const progress = document.getElementById("boardProgress");
 const done = document.getElementById("boardDone");
+
+noTaskData.forEach(noTask => {
+  noTask.textContent = "No Task Here";
+})
+
+function noTaskStatement(noTaskData, availableTask) {
+  switch (availableTask.length) {
+    case 0:
+      noTaskData.forEach(changeCSS => {
+        changeCSS.style.display = "flex";
+      });
+      break;
+    default:
+      noTaskData.forEach(changeCSS => {
+        changeCSS.style.display = "none";
+      });
+  }
+}
