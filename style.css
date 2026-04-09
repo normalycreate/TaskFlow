@@ -90,8 +90,7 @@ body {
 }
 .navButton:active, .palleteButton:active {
     transform: scale(1);
-    filter: saturate(0.7);
-    filter: brightness(80%);
+    filter: saturate(0.7) brightness(80%);
 }
 .palleteButton {
     background: linear-gradient(to top, var(--button-Gradient-Emphasizes-1), var(--button-Gradient-Emphasizes-2));
@@ -176,6 +175,7 @@ body {
     gap: 5px;
     font-size: 13pt;
     color: var(--font);
+    cursor: pointer;
 }
 .notStartedColor, .progressColor, .doneColor {
     width: 1.4rem;
@@ -193,9 +193,6 @@ input[type="radio"] {
     appearance: none;
     position: absolute;
     opacity: 0;
-}
-label {
-    cursor: pointer;
 }
 input#radioNotStarted:checked + label, input#radioProgress:checked + label, input#radioDone:checked + label {
     filter: brightness(140%);
