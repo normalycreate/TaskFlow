@@ -226,8 +226,8 @@ input#radioNotStarted:checked + label, input#radioProgress:checked + label, inpu
         ) padding-box,
         linear-gradient(
             to top, 
-            color-mix(in srgb, var(--stroke-Gradient-1) 100%, transparent),
-            color-mix(in srgb, var(--stroke-Gradient-2) 100%, transparent)
+            color-mix(in srgb, var(--stroke-Gradient-1) 75%, transparent),
+            color-mix(in srgb, var(--stroke-Gradient-2) 40%, transparent)
         ) border-box;   
 }
 .boardColumn {
@@ -254,6 +254,7 @@ input#radioNotStarted:checked + label, input#radioProgress:checked + label, inpu
             color-mix(in srgb, var(--stroke-Gradient-2) 100%, transparent)
         ) border-box;
     filter: brightness(115%);
+    margin-bottom: 10px;
 }
 .statusIcon {
     width: 1.2rem;
@@ -273,30 +274,54 @@ input#radioNotStarted:checked + label, input#radioProgress:checked + label, inpu
     scrollbar-width: thin;
     scrollbar-color: var(--font) var(--created-Scheduler-Gradient-2);
 }
-.taskList::-webkit-scrollbar {
-    width: 6px;
-}
-.taskList::-webkit-scrollbar-thumb {
-    background-color: var(--font);
-    border-radius: 10px;
-}
-.taskCard {
+.taskListCard {
     background:
         linear-gradient(
             to top, 
-            color-mix(in srgb, var(--navbar-Gradient-1) 75%, transparent),
-            color-mix(in srgb, var(--navbar-Gradient-2) 40%, transparent)
+            color-mix(in srgb, var(--created-Scheduler-Gradient-1) 75%, transparent),
+            color-mix(in srgb, var(--created-Scheduler-Gradient-2) 40%, transparent)
         ) padding-box,
         linear-gradient(
             to top, 
-            color-mix(in srgb, var(--stroke-Gradient-1) 75%, transparent),
-            color-mix(in srgb, var(--stroke-Gradient-2) 40%, transparent)
+            color-mix(in srgb, var(--stroke-Gradient-1) 100%, transparent),
+            color-mix(in srgb, var(--stroke-Gradient-2) 100%, transparent)
         ) border-box;
+    min-height: 6rem;
+    border-radius: 0.5rem;
     filter: brightness(115%);
-    padding: 15px;
-    border-radius: 8px;
     color: var(--font);
     cursor: grab;
+    border: 2px solid transparent;
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.cardButton {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.1s ease-out;
+}
+.taskCardMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.taskCardMenu:hover {
+    transform: scale(1);
+    transition: 0.1s ease-out;
+}
+.taskCardMenu:active {
+    transform: scale(1);
+}
+.dateCreated {
+    font-size: 10pt;
+    font-weight: 300;
 }
 .noTask {
     display: flex;
