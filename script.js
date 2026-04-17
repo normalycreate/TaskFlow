@@ -20,11 +20,12 @@ console.log(
 //Navbar element
 const theme = document.getElementById("changeTheme");
 const sortTask = document.getElementById("sortTask");
-const addTask = document.getElementById("addTask");
+const addTask = document.getElementById("addTask"); 
 const delleteTask = document.getElementById("removeTask");
 const taskList = document.getElementById("taskList");
-const noTaskData = document.querySelectorAll(".noTask")
-//Option Menu
+const noTaskData = document.querySelectorAll(".noTask");
+const gettingUserList = document.getElementById("writeInput"); //Task forms that used to create add task
+//Option Menu (Board List)
 const notStartedOption = document.getElementById("radioNotStarted");
 const progressOption = document.getElementById("radioProgress");
 const doneOption = document.getElementById("radioDone");
@@ -50,3 +51,5 @@ function noTaskStatement(noTaskData, availableTask) {
       });
   }
 }
+
+// Add Task Logic
