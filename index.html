@@ -16,8 +16,8 @@
         </h1>
         <ul class="navbarFeature">
             <!--Change Theme Button-->
-            <li class="pallete" id="changeTheme">
-            <button type="button" class="palleteButton">
+            <li class="pallete">
+            <button type="button" id="changeTheme" class="palleteButton">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -33,8 +33,8 @@
             </button>
             </li>
             <!--Sort Task Button-->
-            <li class="sort" id="sortTask">
-            <button type="button" class="navButton">
+            <li class="sort">
+            <button type="button" id="sortTask" class="navButton">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -48,8 +48,8 @@
             </button>
             </li>
             <!--Add Task Button-->
-            <li class="add" id="addTask">
-            <button type="button" class="navButton">
+            <li class="add">
+            <button type="submit" id="addTask" class="navButton">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -63,8 +63,8 @@
             </button>
             </li>
             <!--Remove Button-->
-            <li class="remove" id="removeTask">
-            <button type="button" class="navButton">
+            <li class="remove">
+            <button type="button" id="removeTask" class="navButton">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -80,24 +80,25 @@
             </li>
         </ul>
     </div>
-
     <!-- Hamburger Navbar NOT FINISHED AND WILL ADDED IN THE FUTURE AS FINISHING-->
     <div class="hamburgerNavbar">
     <li class="hamburger" id="hamburger">
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-        >
-        <title>Hamburger Navbar</title>
-        <path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"></path>
-        </svg>
+        <button type="button">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            >
+            <title>Hamburger Navbar</title>
+            <path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"></path>
+            </svg>
+        </button>
     </li>
     </div>
     <!--Written Bar-->
-    <div class="writeBar">
+    <form class="writeBar">
         <p class="selectTheStatus">Select the status</p>
         <div class="statusSelector">
             <div class="notStarted">
@@ -105,16 +106,17 @@
                 <label for="radioNotStarted"><span class="notStartedColor"></span>Not Started</label>
             </div>
             <div class="progress">        
-                <input type="radio" class="radioProgress" id="radioProgress" name="status" value="Progress" checked>
+                <input type="radio" class="radioProgress" id="radioProgress" name="status" value="Progress">
                 <label for="radioProgress"><span class="progressColor"></span>Progress</label>
             </div>
             <div  class="done">
-                <input type="radio" class="radioDone" id="radioDone" name="status" value="Done" checked>
+                <input type="radio" class="radioDone" id="radioDone" name="status" value="Done">
                 <label for="radioDone"><span class="doneColor"></span>Done</label>
             </div>
         </div>
-        <input class="writtenBar" type="text">
-    </div>
+        <!--For user to write their to do list-->
+        <input class="writtenBar" id="writeInput" type="text" placeholder="Type here to write to do list" required>
+    </form>
     <!--Schedule bar to indicate to project status-->
     <div class="mainBoard">
         <div class="board">
@@ -124,16 +126,8 @@
                     <span>Not Started</span>
                 </div>
             </div>
-            <div class="taskList">
-                <!--For list card visual that generated from javascript-->
-                <div class="taskListCard">
-                    <div class="nameCard"><span>Buah manggis buah mangga</span></div>
-                    <div class="dateCreated"><span>25/06/2077</span></div>
-                    <div class="taskCardMenu">
-                        <button type="button" class="cardButton">A</button>
-                        <button type="button" class="cardButton">B</button>
-                    </div>
-                </div>
+            <div class="taskList" id="taskListNotStarted">
+                <!--Here for default list card visual that generated from javascript-->
                 <!--Task Generate Here-->
                 <div class="noTask"></div>
             </div>
@@ -146,7 +140,7 @@
                     <span>Progress</span>
                 </div>
             </div>
-            <div class="taskList">
+            <div class="taskList" id="taskListProgress">
                 <!--Task Generate Here-->
                 <div class="noTask"></div>
             </div>
@@ -159,7 +153,7 @@
                     <span>Done</span>
                 </div>
             </div>
-            <div class="taskList">
+            <div class="taskList" id="taskListDone">
                 <!--Task Generate Here-->
                 <div class="noTask"></div>
             </div>
