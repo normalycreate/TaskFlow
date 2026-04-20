@@ -94,7 +94,6 @@ function letHimRender() {
   letHimCheckUserSchedule();
 }
 
-//Card display
 function letHimCreateCard(cardList) {
   return `
           <div class="taskListCard" id="${cardList.id}" draggable="true">
