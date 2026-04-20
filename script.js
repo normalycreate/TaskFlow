@@ -164,3 +164,5 @@ if (typedListBar) {
 }
 
 letHimRender();
+
+// Plan : Adding card button function and fixing the select status bug!
