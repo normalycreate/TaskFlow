@@ -53,21 +53,11 @@ function addTaskHandling(update) {
   if (update) update.preventDefault();
   const typedText = gettingUserList.value.trim();
   console.log("The person typed", typedText); // Debug 2
-  if(!typedText) {
-    gettingUserList.style.opacity = "0.5";
-    gettingUserList.style.placeholder = "No task here!";
-    gettingUserList.value = "";
-
-    setTimeout(() => {
-      gettingUserList.style.opacity = "1";
-      gettingUserList.placeholder = "Type to write the to do list";
-    }, 2000);
-    return;
-  }
+  
   const safeHandling = sanitizeHTML(typedText);
   const selectedStatus = document.querySelector('input[name="status"]:checked').value;
   const createTask = {
-    id: `task-${Date.now}`,
+    id: `task-${Date.now()}`,
     text: safeHandling,
     status: selectedStatus,
     dateCreated: new Date().toLocaleDateString(undefined, {day: 'numeric', month: 'short', year: 'numeric'})
