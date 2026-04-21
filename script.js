@@ -34,9 +34,10 @@ const gettingUserList = document.getElementById("writeInput"); //Task forms that
 // Kanban board status 
 const getStorageTask = JSON.parse(localStorage.getItem("kanbanStorageCache")) || [];
 const statusContainer = {
+  // Taking from the radio button value
   notStarted: document.getElementById("taskListNotStarted"),
-  progress: document.getElementById("taskListProgress"),
-  done: document.getElementById("taskListDone")
+  Progress: document.getElementById("taskListProgress"),
+  Done: document.getElementById("taskListDone")
 };
 
 // Basic safety method
