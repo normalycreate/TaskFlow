@@ -97,23 +97,29 @@ function letHimRender() {
 function letHimCreateCard(cardList) {
   return `
           <div class="taskListCard" id="${cardList.id}" draggable="true">
+              
+              <div class="nameCard" style="
+              font-size: 14pt;
+              " title="Card Name">
+              <span>${cardList.text}</span></div>
+
               <div class="taskHeader" 
               style="
               display: flex; 
               justify-content: space-between; ">
-                  <div class="dateCreated"><span>${cardList.dateCreated}</span></div>
+                  <div class="dateCreated" style="
+                  font-size: 10pt;
+                  font-weight: 400;
+                  " title="Date Created"><span>${cardList.dateCreated}</span></div>
                   <div class="dragHandle" 
                   style="
                   cursor: grab; 
                   color: var(--font); 
-                  opacity: 0.5;" 
+                  opacity: 0;" 
                   title="Drag me">
                       <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M8 6h2v2H8V6zm0 5h2v2H8v-2zm0 5h2v2H8v-2zm6-10h2v2h-2V6zm0 5h2v2h-2v-2zm0 5h2v2h-2v-2z"></path></svg>
                   </div>
               </div>
-              
-              <div class="nameCard">
-              <span>${cardList.text}</span></div>
               
               <div class="taskCardMenu" 
               style="
@@ -121,7 +127,8 @@ function letHimCreateCard(cardList) {
               justify-content: flex-end; 
               gap: 8px;">
                   <button type="button" class="cardButton deleteBtn" data-id="${cardList.id}" title="Edit Task" 
-                  style="background: var(--button-Gradient-1); 
+                  style="
+                  background: linear-gradient(to top, var(--button-Gradient-1), var(--button-Gradient-2));
                   border-radius: 4px; 
                   padding: 5px; 
                   cursor:pointer;">
@@ -132,7 +139,7 @@ function letHimCreateCard(cardList) {
                     </svg></button>
                   <button type="button" class="cardButton editBtn" data-id="${cardList.id}" title="Delete Task" 
                   style="
-                  background: var(--button-Gradient-1); 
+                  background: linear-gradient(to top, var(--button-Gradient-1), var(--button-Gradient-2));
                   border-radius: 4px; 
                   padding: 5px; 
                   cursor:pointer;">
@@ -164,5 +171,3 @@ if (typedListBar) {
 }
 
 letHimRender();
-
-// Plan : Adding card button function and fixing the select status bug!
