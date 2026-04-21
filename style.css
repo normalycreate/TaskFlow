@@ -265,6 +265,7 @@ input#radioNotStarted:checked + label, input#radioProgress:checked + label, inpu
     background-repeat: no-repeat;
     background-position: center;
 }
+/*To Visualize the to do list from JS*/
 .taskList {
     display: flex;
     flex-direction: column;
@@ -293,8 +294,8 @@ input#radioNotStarted:checked + label, input#radioProgress:checked + label, inpu
     cursor: grab;
     border: 2px solid transparent;
     padding-top: 8px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0.4rem;
+    padding-left: 0.8rem;
 }
 .cardButton {
     width: 1.5rem;
@@ -307,21 +308,13 @@ input#radioNotStarted:checked + label, input#radioProgress:checked + label, inpu
     transform: scale(1);
     transition: 0.1s ease-out;
 }
-.taskCardMenu {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-.taskCardMenu:hover {
-    transform: scale(1);
+.cardButton:hover {
+    transform: scale(1.075);
     transition: 0.1s ease-out;
 }
-.taskCardMenu:active {
+.cardButton:active {
     transform: scale(1);
-}
-.dateCreated {
-    font-size: 10pt;
-    font-weight: 300;
+    filter: saturate(0.7) brightness(80%);
 }
 .noTask {
     display: flex;
