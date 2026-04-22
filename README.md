@@ -22,7 +22,7 @@ Each task can have one of the following statuses: Not Started, In Progress, and 
 
 ## 📦 Installation
     Clone the repository:
-    git clone https://github.com/username/taskflow.git
+    git clone https://github.com/normalycreate/TaskFlow
     
     Navigate into the project folder:
     cd taskflow
