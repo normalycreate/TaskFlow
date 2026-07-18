@@ -28,9 +28,6 @@ const typedListBar = document.querySelector(".writeBar"); // What the user type 
 const addTask = document.getElementById("addTask"); // Adding a task
 const gettingUserList = document.getElementById("writeInput"); //Task forms that used to create add task
 //Board menu 
-const notStarted = document.getElementById("boardNotStarted");
-const progress = document.getElementById("boardProgress");
-const done = document.getElementById("boardDone");
 
 // Kanban board status 
 const getStorageTask = JSON.parse(localStorage.getItem("kanbanStorageCache")) || [];
