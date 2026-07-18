@@ -1,0 +1,30 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="rWyoajCSGKsCPL_843Te">
+    <mxGraphModel dx="2208" dy="1901" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="&lt;img class=&quot;img-fluid d-block mx-auto my-4&quot; style=&quot;cursor: pointer; max-width: 100%; max-height: 100%;&quot; src=&quot;http://i.imgur.com/0Qg0CD4.png&quot; alt=&quot;Image&quot;&gt;" link="&lt;img class=&quot;img-fluid d-block mx-auto my-4&quot; style=&quot;cursor: pointer; max-width: 100%; max-height: 100%;&quot; src=&quot;http://i.imgur.com/0Qg0CD4.png&quot; alt=&quot;Image&quot;&gt;" id="xGHqbgBkAvEsnyHlcIiQ-1">
+          <mxCell parent="1" style="text;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="240" width="460" x="-830" y="-1070" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="xGHqbgBkAvEsnyHlcIiQ-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" value="Add Task Function" vertex="1">
+          <mxGeometry height="40" width="150" x="-560" y="-720" as="geometry" />
+        </mxCell>
+        <mxCell id="xGHqbgBkAvEsnyHlcIiQ-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Mengisi tugas pada bar" vertex="1">
+          <mxGeometry height="40" width="155" x="-562.5" y="-650" as="geometry" />
+        </mxCell>
+        <mxCell id="xGHqbgBkAvEsnyHlcIiQ-8" edge="1" parent="1" source="xGHqbgBkAvEsnyHlcIiQ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xGHqbgBkAvEsnyHlcIiQ-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xGHqbgBkAvEsnyHlcIiQ-6" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Bar diisi oleh pengguna" vertex="1">
+          <mxGeometry height="80" width="165" x="-567.5" y="-580" as="geometry" />
+        </mxCell>
+        <mxCell id="xGHqbgBkAvEsnyHlcIiQ-7" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="50" width="100" x="-300" y="-565" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
