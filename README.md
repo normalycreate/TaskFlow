@@ -20,6 +20,7 @@ A simple, beautiful, and powerful task management application built with vanilla
 - **🔄 Smart Sorting** - Sort tasks by date or name (4 modes)
 - **📤 Export Tasks** - Download your tasks as JSON backup
 - **💾 Persistent Storage** - Tasks saved in browser localStorage
+- **📱 Fully Responsive** - Works perfectly on mobile, tablet, and desktop
 
 ### 🛡️ Security Features
 - XSS Protection - Safe handling of user input
@@ -130,6 +131,8 @@ TaskFlow/
 - **Storage**: Browser localStorage API
 - **Dependencies**: None! (100% vanilla JavaScript)
 - **Browser Support**: All modern browsers
+- **Responsive Design**: Mobile-first, works on all screen sizes
+- **Touch Support**: Optimized for touch devices with larger tap targets
 
 ---
 
@@ -157,6 +160,29 @@ TaskFlow is designed with security in mind:
 ✅ **Safe DOM Manipulation** - No unsafe `innerHTML` for user data  
 ✅ **Status Validation** - Only allowed status values accepted  
 ✅ **Confirmation Dialogs** - Prevents accidental data loss  
+
+---
+
+## 📱 Mobile Support
+
+TaskFlow is **fully responsive** and optimized for:
+
+### Supported Devices
+- ✅ **Desktop** - Full experience (1024px+)
+- ✅ **Tablet** - Optimized layout (768px - 1024px)
+- ✅ **Mobile** - Vertical stack (480px - 768px)
+- ✅ **Small Mobile** - Compact interface (360px - 480px)
+
+### Mobile Features
+- **Vertical Column Layout** - Columns stack for easy scrolling
+- **Touch-Friendly Buttons** - Minimum 44x44px tap targets
+- **Visible Drag Handles** - Always shown on mobile devices
+- **Landscape Support** - Columns side-by-side in landscape mode
+- **Optimized Text Sizes** - Readable on all screen sizes
+- **No Horizontal Scroll** - Content always fits the screen
+
+### Testing Your Device
+Simply open TaskFlow on any device - it automatically adapts to your screen size!
 
 ---
 
@@ -190,6 +216,7 @@ if (text.length > 500) // Change 500 to your preferred limit
 ### Drag & Drop Not Working?
 - Use a modern browser (Chrome 91+, Firefox 89+, Safari 14+)
 - Make sure JavaScript is enabled
+- On mobile, drag handles are always visible for easier interaction
 
 ### Theme Not Switching?
 - Clear your browser cache
